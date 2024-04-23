@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.0](https://github.com/microlinkhq/react-json-view/compare/v1.23.1...v1.24.0) (2024-04-23)
+
+
+### Features
+
+* create `build-and-release.yml` ([ee215ae](https://github.com/microlinkhq/react-json-view/commit/ee215aecdfd14ab1daad55a8f1fcf680c341b3c2))
+* remove update build-and-release.yml ([c6546bf](https://github.com/microlinkhq/react-json-view/commit/c6546bfeb1c004bba748c9271fc4dc3f08eda8af))
+* update build-and-release.yml ([f8e28d0](https://github.com/microlinkhq/react-json-view/commit/f8e28d049f6e1cd9baea5b78872127565f4c6324))
+* update package.json ([4bd4fae](https://github.com/microlinkhq/react-json-view/commit/4bd4faec94faeb0c136bb45b13de40e51b67c051))
+* update package.json ([870df78](https://github.com/microlinkhq/react-json-view/commit/870df78e3cc9f9365b4c829261007a1556443daf))
+
 ## [1.23.0](https://github.com/microlinkhq/react-json-view/compare/v1.22.2...v1.23.0) (2023-10-26)
 
 
