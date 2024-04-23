@@ -206,6 +206,7 @@ class RjvObject extends React.PureComponent {
         return (
             <div
                 class="object-key-val"
+                id={namespace.join('-')}
                 onMouseEnter={() =>
                     this.setState({ ...this.state, hovered: true })
                 }
