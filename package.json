@@ -151,10 +151,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microlinkhq/react-json-view.git"
+    "url": "git+https://github.com/Yilun-Sun/react-json-view.git"
   },
   "bugs": {
-    "url": "https://github.com/microlinkhq/react-json-view/issues"
+    "url": "https://github.com/Yilun-Sun/react-json-view/issues"
   },
   "keywords": [
     "array-viewer",
