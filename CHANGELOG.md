@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.25.1](https://github.com/Yilun-Sun/react-json-view/compare/v1.24.0...v1.25.1) (2024-05-15)
+
+
+### Bug Fixes
+
+* test error ([a5c7741](https://github.com/Yilun-Sun/react-json-view/commit/a5c77411e93e858d9e2535ab5a0842fe448bda0b))
+
 ## 1.24.0 (2024-05-15)
 
 
