@@ -72,7 +72,33 @@ class RjvObject extends React.PureComponent {
             nextProps.namespace !== prevProps.namespace ||
             nextProps.rjvId !== prevProps.rjvId
         ) {
+            // Only when changes occur to this array, will recalculate `expanded` by `shouldCollapse`
+            if (
+                nextProps.forceCalculateShouldCollapseOnNamespaceUpdate.join(
+                    '-'
+                ) !==
+                (
+                    prevProps?.forceCalculateShouldCollapseOnNamespaceUpdate ??
+                    []
+                ).join('-')
+            ) {
+                const shouldCollapseNext = nextProps.shouldCollapse({
+                    name: nextProps.name,
+                    src: nextProps.src,
+                    type: toType(nextProps.src),
+                    namespace: nextProps.namespace
+                });
+
+                AttributeStore.set(
+                    nextProps.rjvId,
+                    nextProps.namespace,
+                    'expanded',
+                    !shouldCollapseNext
+                );
+            }
+
             const newState = RjvObject.getState(nextProps);
+
             return {
                 ...newState,
                 prevProps: nextProps

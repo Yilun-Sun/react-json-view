@@ -62,6 +62,15 @@ export interface ReactJsonViewProps {
    */
   shouldCollapse?: false | ((field: CollapsedFieldProps) => boolean);
   /**
+   * An array of namespace strings that specifies which namespaces will always be expanded when `forceCalculateShouldCollapseOnNamespaceUpdate` is updated.
+   * Only when changes occur to this array, will the components along the specified namespace paths be expanded automatically.
+   * This mechanism allows certain parts of your data structure to be highlighted dynamically, ensuring key structures are visible only when necessary.
+   * Note that components along these namespaces are expanded upon initial rendering if they are included in this array at that time.
+   * 
+   * Default: []
+   */
+  forceCalculateShouldCollapseOnNamespaceUpdate?: string[]
+  /**
    * When an integer value is assigned, arrays will be displayed in groups by count of the value.
    * Groups are displayed with brakcet notation and can be expanded and collapsed by clickong on the brackets.
    *
