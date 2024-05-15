@@ -74,9 +74,10 @@ class RjvObject extends React.PureComponent {
         ) {
             // Only when changes occur to this array, will recalculate `expanded` by `shouldCollapse`
             if (
-                nextProps.forceCalculateShouldCollapseOnNamespaceUpdate.join(
-                    '-'
-                ) !==
+                (
+                    nextProps?.forceCalculateShouldCollapseOnNamespaceUpdate ??
+                    []
+                ).join('-') !==
                 (
                     prevProps?.forceCalculateShouldCollapseOnNamespaceUpdate ??
                     []
